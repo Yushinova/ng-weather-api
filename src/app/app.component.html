@@ -1,6 +1,5 @@
 <div class="card">
   <h3>Прогноз погоды</h3>
-
   <form class="row justify-content-center mt-3" (submit)="onFormSubmit($event)">
     <div class="col-auto city">
         <input class="form-control" type="text" placeholder="введите название города" 
@@ -8,11 +7,8 @@
     </div>
     <div class="col-auto">
         <button type="submit" class="btn btn-light">Поиск</button>
-    </div>
-   
+    </div> 
   </form>
-
-   
     <div class="err" name="error">
         @if(error!==""){
         <p>{{error}}</p>
@@ -22,8 +18,7 @@
     <div class="weather">
         <img src="{{icon}}" alt="" class="weather-icon" name="icon"/>
         <h1 name="temp">{{temp}}</h1>
-        <h2 name="address">{{address}}</h2>
-  
+        <h2 name="address">{{address}}</h2> 
     <div class="details">
         <div class="col-details">
             <img src="humidity.png" alt="humidity" />
@@ -32,9 +27,7 @@
                 <p class="humidity" name="humidity">{{humidity}}</p>
                 <p>Влажность</p>
             </div>
-        </div>
-  
-  
+        </div> 
         <div class="col-details">
             <img src="barometer.png" alt="barometer" />
   

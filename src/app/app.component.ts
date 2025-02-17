@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
-import { getWeather, WeatherResult } from '../weather-api/client';
+import { getWeather} from '../weather-api/client';
 
 @Component({
   selector: 'app-root',
@@ -43,9 +43,7 @@ async GetWeather(){
     console.log(this.error)
     return
   }
-  finally{
-  
-  }
+ 
 }
  
 }
