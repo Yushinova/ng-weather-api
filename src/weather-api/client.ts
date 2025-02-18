@@ -6,7 +6,7 @@ async function sendRequest(city: string) : Promise<WeatherResult> {
     try {
         const response = await axios.get(`${apiUrl}${city}?unitGroup=metric&key=${apiKey}&contentType=json`);
         const data = response.data; // данные из тела ответа
-       // console.log(response);
+        //console.log(response);
         return new WeatherResult(data.address,
             Math.round(Number(data.currentConditions.temp)),
             data.currentConditions.humidity,
