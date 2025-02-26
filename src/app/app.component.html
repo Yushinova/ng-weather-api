@@ -9,12 +9,12 @@
         <button type="submit" class="btn btn-light">Поиск</button>
     </div> 
   </form>
+  @if(error!==""){
     <div class="err" name="error">
-        @if(error!==""){
         <p>{{error}}</p>
-        }
     </div> 
-  @if(error===""){
+  }
+ @else{
     <div class="weather">
         <img src="{{icon}}" alt="" class="weather-icon" name="icon"/>
         <h1 name="temp">{{temp}}</h1>
